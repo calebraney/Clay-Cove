@@ -1,10 +1,1 @@
-"use strict";
-(() => {
-  // src/index.js
-  document.addEventListener("DOMContentLoaded", function(e) {
-    console.log("hello world");
-    window.Webflow ||= [];
-    window.Webflow.push(() => {
-    });
-  });
-})();
+"use strict";(()=>{document.addEventListener("DOMContentLoaded",function(){let t=new SplitType("h1",{types:"lines",tagName:"span"});function o(){let e=gsap.timeline({delay:.4,defaults:{ease:"power2.out",duration:.6}});e.set(".home_component",{opacity:1}),e.from(".home_background-image",{scale:1.1,duration:1.8,ease:"power1.out"},"<"),e.fromTo(".home_logo",{yPercent:50,opacity:0},{yPercent:0,opacity:1},"<"),e.to(".home_logo",{yPercent:-50,opacity:0}),e.from("h1 .line",{y:"1rem",opacity:0,stagger:{each:.2,from:"left"},duration:.8},"-=.2"),e.from(".navbar_component",{yPercent:-100,opacity:0},"-=.2"),e.from(".home_button-wrapper",{y:"1rem",opacity:0},"<")}o()});})();
